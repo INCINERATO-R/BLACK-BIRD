@@ -1,0 +1,18 @@
+.main-container{
+    width:95%;
+    height:100%;
+    background:#bbb;
+    border-radius:5px;
+    margin:2.5%;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.tab{
+    width:230px;
+    padding:5px;   
+    height:40px; 
+    border:1px solid transparent;
+    border-radius:5px;      
+}

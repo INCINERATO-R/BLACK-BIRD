@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/sheet.css" type="text/css">
+	</head>
+
+	<body>
+		<div class="circle light" id="lol"></div>
+		<div class="circle dark" id="lel"></div>
+		<div class="circle dark" id="lul"></div>
+		<div class="circle light" id="lal"></div>
+		<div class="circle light" id="lil"></div>
+		<div class="circle dark" id="lwl"></div>
+		<div class="circle light" id="lrl"></div>
+		<div class="circle dark" id="ltl"></div>
+		<div class="circle light" id="lyl"></div>
+		<div class="circle dark" id="lpl"></div>
+		<div class="circle dark" id="lsl"></div>
+		<div class="circle light" id="ldl"></div>
+		<div class="circle dark" id="lgl"></div>
+		<div class="circle light" id="lfl"></div>
+		<div class="circle light" id="lhl"></div>
+		<div class="circle dark" id="ljl"></div>
+		<div class="circle dark" id="lkl"></div>
+
+
+
+
+
+		<!-- LOGIN SIGN UP FORM -->
+        <div class="form-structor" style="left:38%;top:15%">
+            <div class="signup slide-up">
+              <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+              <div class="form-holder">
+                <input type="text" class="input" placeholder="Name" />
+                <input type="email" class="input" placeholder="Email" />
+                <input type="password" class="input" placeholder="Password" />
+              </div>
+              <button class="btn-submit">Sign up</button>
+            </div>
+            <div class="login ">
+              <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Login</h2>
+                <div class="form-holder">
+                  <input type="email" class="input" placeholder="Email" />
+                  <input type="password" class="input" placeholder="Password" />
+                </div>
+                <button class="btn-submit">Login</button>
+              </div>
+            </div>
+          </div>
+          <!-- LOGIN SIGN UP FORM -->
+
+          <script>
+            /* LOGIN SIGNUP FORM */
+              console.clear();
+              const loginBtn =  document.querySelector('#login');
+              const signupBtn = document.querySelector('#signup');
+
+              function slideUp(){
+                if(this.id == 'signup')
+                {
+                  const parent = this.parentElement;
+                  const sibling = parent.nextElementSibling;
+                  parent.classList.remove('slide-up');
+                  sibling.classList.add('slide-up');
+                } else 
+                {
+                  const parent = this.parentElement.parentElement;
+                  const sibling = parent.previousElementSibling;
+                  parent.classList.remove('slide-up');
+                  sibling.classList.add('slide-up');
+                }
+              }
+
+              loginBtn.addEventListener('click', slideUp);
+              signupBtn.addEventListener('click', slideUp);
+              /* LOGIN SIGNUP FORM */
+        </script>
+	</body>
+</html>

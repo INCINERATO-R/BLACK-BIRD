@@ -1,0 +1,724 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/sheet.css" type="text/css">
+        <link id="original" rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="./css/hover.css" type="text/css">
+        <style>
+          @font-face {
+                font-family: myFirstFont;
+                src: url("./sprite/fonts/arista.ttf");
+                }
+
+                button{
+                  background:#fff;
+                }
+    
+                body{
+                    font-family: myFirstFont;
+                }
+                
+                a,span{
+                  color:#0d0d0d;
+                }
+
+                a:hover{
+                    text-decoration: none;
+                }
+
+                h2,h4,h6{
+                  color:#0d0d0d;
+                }
+
+                /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--color-two);
+    width:60%;
+    height:60%;
+    margin-left:20%;
+    margin-top:2.5%;
+    padding:20px;
+    border:transparent;
+    border-radius: 10px;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #000;
+    margin-left:98%;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+        </style>
+    </head>
+
+    <body class="bg-secondary" onselectstart="return false" id="home">
+
+      <!--FIXED BUTTON : 1. JUMP TO PLAYER-->
+        <div class="fixed-buttons">
+          <a href="#music-player"><button id="myBtn" 77class="jump-to-player">&#x266B;</button></a>
+        </div>
+      <!--FIXED BUTTON : 1. JUMP TO PLAYER-->
+
+        <!--NAVBAR-->
+          <nav>
+            <div class="links">
+              <a href="./main.html" class="hvr-overline-from-left">HOME</a>
+              <a href="#feed" class="hvr-overline-from-left">FEED</a>
+              <a href="#feed" id="search-link" class="hvr-overline-from-left" onclick="document.getElementById('searchbox-one').focus(); return false;">SEARCH</a>
+              <a href="#profile" class="hvr-overline-from-left">PROFILE</a>
+              <a href="#" class="hvr-overline-from-left">HELP</a>
+            </div>      
+
+            <div style="top:45%;" class="socials">
+              <a href="#" class="hvr-grow"><img src="./sprite/icons/fb.png"></a>
+              <a href="#" class="hvr-grow"><img src="./sprite/icons/insta.png"></a>
+              <a href="#" class="hvr-grow"><img src="./sprite/icons/twitter.png"></a>
+              <a href="#" class="hvr-grow"><img src="./sprite/icons/reddit.png"></a>
+            </div>
+          </nav>
+        <!--NAVBAR-->
+
+        <!--MAIN CONTAINER FOR THE CONTENT-->
+        <div class="main-container">
+            
+          <!--LOGO + COOL BACKGROUND IMG + TAGLINE-->
+              <div class="block first">
+                <img src="./sprite/logo.png">
+                  <div id="text">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <br>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde fugiat provident perferendis natus. Ex aliquid nesciunt animi laboriosam debitis suscipit dolores esse quisquam iure voluptatibus quasi, omnis possimus odit corporis accusamus autem sapiente magnam ipsa molestiae eligendi porro exercitationem.</h6>    
+                    <br>
+                    <button class="hvr-float-shadow">Explore songs</button>
+                  </div>
+
+                 </div>
+            <!--LOGO + COOL BACKGROUND IMG + TAGLINE-->
+
+            <!--MUSIC PLAYER = STICKY-->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img src="./sprite/cover/ariana.jpg" class="cover">
+                </div>
+
+              </div>
+            <!--MUSIC PLAYER = STICKY-->
+
+            <!--TOP 10 LIST-->
+            <div class="third block">
+              <br><br>
+              <h2 class="heading" style="color:#0d0d0d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOP #10 PICKS FROM PUBLIC UPLOADS</h2>
+            
+              <BR><BR>
+              <div class="tabs-toggle">
+                <button>ROCK</button>
+                <button>POP</button>
+                <button>RAP</button>
+                <button>HIP-HOP</button>
+                <button>ELECTRONIC</button>
+                <button>CLASSICAL</button>
+                <button>COUNTRY</button>
+                <button>JAZZ</button>
+              </div>
+
+              <div class="list">
+                <br><br>
+                <h4 style="color:#0d0d0d;">ROCK</h4>
+                <br><Br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+                <span>#1&nbsp;&nbsp;&nbsp;SONG NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALBUM NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,99,913&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0d0d0d"href="#">&#x27A4;</a></span><br>
+              </div>
+            </div>
+            <!--TOP 10 LIST-->
+
+            <!--FEED-->
+            <div class="fourth block" id="feed">
+              <br><br>
+              <h2 class="heading" style="color:#0d0d0d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FEED</h2>
+
+              <!--TABS FOR OPTIONS-->
+              <br><br><br>
+              <div class="tabbed">
+                <input type="radio" name="tabs" id="tab-nav-1" checked>
+                <label for="tab-nav-1">GENERAL</label>
+                <input type="radio" name="tabs" id="tab-nav-2">
+                <label for="tab-nav-2">PROFILES</label>
+                <input type="radio" name="tabs" id="tab-nav-3">
+                <label for="tab-nav-3">SONGS</label>
+                <input type="radio" name="tabs" id="tab-nav-4">
+                <label for="tab-nav-4">MY POSTS</label>
+                <div class="tabs">
+                   <!--GENERAL-->
+                  <div>
+                    <p>
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>King , Scar</h2>
+                          <h4>Scarlxrd</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box1').style.display = document.getElementById('box1').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+                
+                        <div class="bottom-box" id="box1">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/scarlxrd.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>
+<Br>
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>Moonlight</h2>
+                          <h4>Ariana Grande</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box2').style.display = document.getElementById('box2').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+                
+                        <div class="bottom-box" id="box2">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/ariana.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>
+<br>
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>In the end</h2>
+                          <h4>Linkin Park</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box3').style.display = document.getElementById('box3').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+
+                        <div class="bottom-box" id="box3">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/linkin park.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>  
+<br>                      
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>Bad for me</h2>
+                          <h4>Raven Felix</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box4').style.display = document.getElementById('box4').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+                
+                        <div class="bottom-box" id="box4">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/raven felix.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>
+<br>
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>Doin Too much</h2>
+                          <h4>Raven Felix</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box5').style.display = document.getElementById('box5').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+                
+                        <div class="bottom-box" id="box5">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/raven felix.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>
+<br>
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>One Step Closer</h2>
+                          <h4>Linkin Park</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box6').style.display = document.getElementById('box6').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+                
+                        <div class="bottom-box" id="box6">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/linkin park.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>
+<br>
+                      <div class="post-songs">
+                        <div class="top-box">
+                          <h2>Dangerous Woman</h2>
+                          <h4>Ariana Grande</h4>
+                          <a href="" class="play"><img src="./sprite/icons/play.png"></a>
+                          <a href="" class="add"><img src="./sprite/icons/addtoplaylist.png"></a>
+                          <button class="expand" onclick="document.getElementById('box7').style.display = document.getElementById('box7').style.display === 'flex' ? 'none' : 'flex'; return false;"><img src="./sprite/icons/expand.png"></button>
+                        </div>
+                
+                        <div class="bottom-box" id="box7">
+                          <hr>
+                          <img style="margin-top:30px;" src="./sprite/cover/ariana.jpg">
+                          <div class="meta-data-songs">
+                            <span><b>DESCRIPTION :</b> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus odit quisquam fugiat rerum, libero exercitationem impedit inventore error suscipit!</span>
+                            <span><b>UPLOAD DATE :</b> <br> 1-1-2020</span>
+                            <span><a href="" class="like">&#x2764;</a> 4,20,690</span>
+                          </div>    
+                        </div>
+                      </div>
+                   </p>
+                </div>
+                <!--GENERAL-->
+                <!--USERS-->
+                  <div>
+                    <p>
+                      <form>
+                        <input type="text" id="searchbox" placeholder="&#128269 LOOK FOR PROFILES">
+                      </form>
+
+                      <div class="post-users">
+
+                        <div class="user-preview">
+                          <img class="display-picture" src="./sprite/user.jpg" onclick="window.location = './sprite/user.jpg';">
+                          <span style="margin-left:5%;">ScarLxrd</span>
+                          <span style="margin-left:10%;">&#9829; 26,89,999</span>
+                          <span style="margin-left:10%">+admire</span>
+                          <img style="margin-left:20%;" src="./sprite/icons/expand.png" class="expand" onclick="document.getElementById('user1').style.display = document.getElementById('user1').style.display === 'block' ? 'none' : 'block'; return false;">
+                        </div>
+                     
+                      <div class="user-fullview" id="user1">
+                        <br>
+                        <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eius quaerat beatae, cum vero blanditiis debitis eaque optio accusantium inventore ullam facilis quis incidunt reprehenderit doloremque quas at alias ab ea laudantium facere sapiente dolor hic. Consectetur, voluptatibus fuga non laborum aperiam, eos facilis provident architecto obcaecati blanditiis nam. Ipsa?</p>
+                        <hr>
+                        <div class="user-songs">
+                          <h4>SONG UPLOADS </h4>
+                          <span>Heart Attack</span>
+                          <span>HXW THEY JUDGE</span>
+                          <span>HEAD GXNE</span>
+                          <span>6 Feet</span>
+                          <span>NX PRESSURE</span>
+                          <span>STFU</span>
+                          <span>CHXKE</span>
+                        </div>
+                        <br>
+                        <div class="user-playlists">
+                          <h4>PLAYLISTS CREATED</h4>
+                          <span>IMMXRTALIZATIXN</span>
+                        </div>
+                      </div>     
+                    </div>
+
+                      <br>
+
+                      <div class="post-users">
+
+                        <div class="user-preview">
+                          <img class="display-picture" src="./sprite/user2.jpg" onclick="window.location = './sprite/user2.jpg';">
+                          <span style="margin-left:5%;">Raven Felix</span>
+                          <span style="margin-left:10%;">&#9829;12,89,999</span>
+                          <span style="margin-left:10%">+admire</span>
+                          <img style="margin-left:15%;" src="./sprite/icons/expand.png" class="expand" onclick="document.getElementById('user2').style.display = document.getElementById('user2').style.display === 'block' ? 'none' : 'block'; return false;">
+                        </div>
+                       
+                        <div class="user-fullview" id="user2">
+                          <br>
+                          <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eius quaerat beatae, cum vero blanditiis debitis eaque optio accusantium inventore ullam facilis quis incidunt reprehenderit doloremque quas at alias ab ea laudantium facere sapiente dolor hic. Consectetur, voluptatibus fuga non laborum aperiam, eos facilis provident architecto obcaecati blanditiis nam. Ipsa?</p>
+                          <hr>
+                          <div class="user-songs">
+                            <h4>SONG UPLOADS </h4>
+                            <span>IF you only knew</span>
+                            <span>Doin too much</span>
+                            <span>Hit the gas</span>
+                            <span>Bad for me</span>
+                            <span>Feel that</span>
+                          </div>
+                          <br>
+                          <div class="user-playlists">
+                            <h4>PLAYLISTS CREATED</h4>
+                            <span>Valifornication</span>
+                            <span>Watching Me</span>
+                          </div>
+                        </div>     
+                      </div>
+
+                      <br>
+
+                      <div class="post-users">
+
+                        <div class="user-preview">
+                          <img class="display-picture" src="./sprite/user.jpg" onclick="window.location = './sprite/user.jpg';">
+                          <span style="margin-left:5%;">ScarLxrd</span>
+                          <span style="margin-left:10%;">&#9829; 26,89,999</span>
+                          <span style="margin-left:10%">+admire</span>
+                          <img style="margin-left:20%;" src="./sprite/icons/expand.png" class="expand" onclick="document.getElementById('user3').style.display = document.getElementById('user3').style.display === 'block' ? 'none' : 'block'; return false;">
+                        </div>
+                     
+                      <div class="user-fullview" id="user3">
+                        <br>
+                        <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eius quaerat beatae, cum vero blanditiis debitis eaque optio accusantium inventore ullam facilis quis incidunt reprehenderit doloremque quas at alias ab ea laudantium facere sapiente dolor hic. Consectetur, voluptatibus fuga non laborum aperiam, eos facilis provident architecto obcaecati blanditiis nam. Ipsa?</p>
+                        <hr>
+                        <div class="user-songs">
+                          <h4>SONG UPLOADS </h4>
+                          <span>Heart Attack</span>
+                          <span>HXW THEY JUDGE</span>
+                          <span>HEAD GXNE</span>
+                          <span>6 Feet</span>
+                          <span>NX PRESSURE</span>
+                          <span>STFU</span>
+                          <span>CHXKE</span>
+                        </div>
+                        <br>
+                        <div class="user-playlists">
+                          <h4>PLAYLISTS CREATED</h4>
+                          <span>IMMXRTALIZATIXN</span>
+                        </div>
+                      </div>     
+                    </div>
+
+                      <br>
+
+                      <div class="post-users">
+
+                        <div class="user-preview">
+                          <img class="display-picture" src="./sprite/user2.jpg" onclick="window.location = './sprite/user2.jpg';">
+                          <span style="margin-left:5%;">Raven Felix</span>
+                          <span style="margin-left:10%;">&#9829;12,89,999</span>
+                          <span style="margin-left:10%">+admire</span>
+                          <img style="margin-left:15%;" src="./sprite/icons/expand.png" class="expand" onclick="document.getElementById('user4').style.display = document.getElementById('user4').style.display === 'block' ? 'none' : 'block'; return false;">
+                        </div>
+                     
+                      <div class="user-fullview" id="user4">
+                        <br>
+                        <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eius quaerat beatae, cum vero blanditiis debitis eaque optio accusantium inventore ullam facilis quis incidunt reprehenderit doloremque quas at alias ab ea laudantium facere sapiente dolor hic. Consectetur, voluptatibus fuga non laborum aperiam, eos facilis provident architecto obcaecati blanditiis nam. Ipsa?</p>
+                        <hr>
+                        <div class="user-songs">
+                          <h4>SONG UPLOADS </h4>
+                          <span>IF you only knew</span>
+                          <span>Doin too much</span>
+                          <span>Hit the gas</span>
+                          <span>Bad for me</span>
+                          <span>Feel that</span>
+                        </div>
+                        <br>
+                        <div class="user-playlists">
+                          <h4>PLAYLISTS CREATED</h4>
+                          <span>Valifornication</span>
+                          <span>Watching Me</span>
+                        </div>
+                      </div>     
+                    </div>
+                    </p>
+                  </div>
+                <!--USERS-->
+                <!--SONGS-->
+                <div>
+                  <p>
+                    <form>
+                      <input type="text" id="searchbox" placeholder="&#128269 LOOK FOR SONGS">
+                    </form>
+                  </p>
+                </div>
+              <!--SONGS-->
+              <!--PLAYLISTS-->
+              <div>
+                <p>
+                  <form>
+                    <input type="text" id="searchbox" placeholder="&#128269 LOOK FOR PLAYLISTS">
+                  </form>
+                </p>
+              </div>
+            <!--PLAYLISTS-->
+                </div>
+                <br><br>
+              </div>
+              <!--TABS FOR OPTIONS-->
+            </div>
+            <!--FEED-->
+
+            <!--PROFILE-->
+            <div class="fifth block" id="profile">
+              <br>
+              <h2 class="heading" style="color:#0d0d0d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROFILE SETTINGS</h2>
+              <br>
+              <div class="theme-content">
+                <h4 style="color:#0d0d0d;">THEMES &nbsp;&nbsp;&nbsp;</h4>
+                <button onclick="change1();" class="hvr-shutter-out-horizontal">DEFAULT</button>
+                <button onclick="change2();" class="hvr-shutter-out-horizontal">OLIVES</button>
+                <button onclick="change3();" class="hvr-shutter-out-horizontal">BUBBLE GUM</button>
+                <button onclick="change4();" class="hvr-shutter-out-horizontal">OCEANIC</button>
+                <button onclick="change5();" class="hvr-shutter-out-horizontal">FADED</button>
+                <button onclick="change6();" class="hvr-shutter-out-horizontal">LEMONADE</button>
+                <button onclick="change7();" class="hvr-shutter-out-horizontal">BLOODSHOT</button>
+                <button onclick="change8();" class="hvr-shutter-out-horizontal">CHEMICAL</button>
+              </div>
+
+              <br><br>
+
+              <div class="profile-buttons">
+                <button class="edit" onclick="disableToggle();" class="hvr-shutter-out-horizontal">EDIT</button>&nbsp;&nbsp;
+                <button class="save">SAVE</button>
+              </div>
+
+              <br>
+
+              <div class="main-upload-content">
+
+                <div class="profile-content">
+                  <h4 style="color:#0d0d0d;">PROFILE PICTURE&nbsp;&nbsp;&nbsp;</h4>
+                  <br>
+                  <img class="profile-picture" src="./sprite/cover/ariana.jpg">
+                  <input type="file" id="upload">
+                </div>
+  
+                <div class="bio-content">
+                  <h4 style="color:#0d0d0d;">BIO&nbsp;&nbsp;&nbsp;</h4>
+                  <textarea id="bio"></textarea>
+                </div>
+  
+                <div class="initial-content">
+                  <h4 style="color:#0d0d0d;">USERNAME AND PASSWORD&nbsp;&nbsp;&nbsp;</h4>
+                  <br>
+                  <input type="text" id="username">
+                  <input type="password" id="password">
+                </div>
+  
+                <div class="upload-content">
+                  <h4 style="color:#0d0d0d;">POST&nbsp;&nbsp;&nbsp;</h4>
+                  <br><Br>
+                  <div style="margin-left:10%;">
+                    <h5 style="color:#0d0d0d;">COVER IMAGE&nbsp;&nbsp;&nbsp;</h5>
+                    <input type="file" id="song-cover">
+                  </div>
+                  <div style="position: absolute; margin-left:30%;margin-top:-4.5%;">
+                    <h5 style="color:#0d0d0d;">UPLOAD AUDIO FILE&nbsp;&nbsp;&nbsp;</h5>
+                    <input type="file" id="song-cover">
+                  </div>
+                  <div style="position:absolute;margin-left:52.5%;margin-top:-4.5%;">
+                    <h5 style="color:#0d0d0d;">SONG NAME&nbsp;&nbsp;&nbsp;</h5>
+                    <input type="text" class="songname">
+                  </div> 
+                  <Br><br>
+                  <button type="submit">UPLOAD</button>
+                </div>
+
+              </div>
+              <br><br><br><br>
+            </div>
+
+            
+                   
+            <!--MISCELLANEOUS CONTENT-->
+            <div class="block sixth">
+              <Br><Br>
+              <h4 style="color:#0d0d0d;margin-left:4%;">EXTRAS</h4>
+              <br>
+
+              <div class="main-flex">
+                <div class="secondary-flex">
+                  <img src="./sprite/icons/icon1.png" class="hvr-buzz">
+                  <h4> DEVELOPERS </h4>
+                </div>
+                <div class="secondary-flex">
+                  <img src="./sprite/icons/icon2.png" class="hvr-buzz">
+                  <h4>F . A . Q</h4>
+                </div>
+                <div class="secondary-flex">
+                  <img src="./sprite/icons/icon3.png" class="hvr-buzz">
+                  <h4>SUGGESTIONS</h4>
+                </div>
+              </div>
+            <!--MISCELLANEOUS CONTENT-->
+
+            <div class="final-block">
+              <h3 style="color:#0d0d0d;">MADE WITH</h3>
+              <div>
+                <img src="./sprite/icons/final bar/html.png" class="hvr-bounce-in">
+                <img src="./sprite/icons/final bar/css.png" class="hvr-bounce-in">
+                <img src="./sprite/icons/final bar/js.png" class="hvr-bounce-in">
+                <img src="./sprite/icons/final bar/php.png" class="hvr-bounce-in">
+                <img src="./sprite/icons/final bar/xml.png" class="hvr-bounce-in">
+                <img src="./sprite/icons/final bar/brain.png" class="hvr-bounce-in">
+              </div>
+            </div>
+
+            <br>
+          </div>
+        <!--MAIN CONTAINER FOR THE CONTENT-->
+
+        <script>
+          function change1()
+          {
+            document.documentElement.style.setProperty('--color-one','#d9d9d9');
+            document.documentElement.style.setProperty('--color-two','#bbb');
+            document.documentElement.style.setProperty('--color-three','#0d0d0d');
+            document.documentElement.style.setProperty('--color-four','#c9c9c9');
+            document.documentElement.style.setProperty('--color-five','gray');
+          }
+          function change2()
+          {
+            document.documentElement.style.setProperty('--color-one','#f7f7f7');
+            document.documentElement.style.setProperty('--color-two','#d9ef81');
+            document.documentElement.style.setProperty('--color-three','#0d0d0d');
+            document.documentElement.style.setProperty('--color-four','#b5d43c');
+            document.documentElement.style.setProperty('--color-five','#9acb34');          
+          }
+          function change3()
+          {
+            document.documentElement.style.setProperty('--color-one','#fdb0a8');
+            document.documentElement.style.setProperty('--color-two','#fcb8b7');
+            document.documentElement.style.setProperty('--color-three','#0c0c0c');
+            document.documentElement.style.setProperty('--color-four','#ff898f');
+            document.documentElement.style.setProperty('--color-five','#ec858b');
+          }
+          function change4()
+          {
+            document.documentElement.style.setProperty('--color-one','#eaf4ff');
+            document.documentElement.style.setProperty('--color-two','#d6eaff');
+            document.documentElement.style.setProperty('--color-three','#0a0a0a');
+            document.documentElement.style.setProperty('--color-four','#add6ff');
+            document.documentElement.style.setProperty('--color-five','#84c1ff');
+          }
+          function change5()
+          {
+            document.documentElement.style.setProperty('--color-one','#dec3c3');
+            document.documentElement.style.setProperty('--color-two','#e7d3d3');
+            document.documentElement.style.setProperty('--color-three','#0f0f0f');
+            document.documentElement.style.setProperty('--color-four','#f0e4e4');
+            document.documentElement.style.setProperty('--color-five','#fff');
+          }
+          function change6()
+          {
+            document.documentElement.style.setProperty('--color-one','#fff8a7');
+            document.documentElement.style.setProperty('--color-two','#fff57f');
+            document.documentElement.style.setProperty('--color-three','#0f0f0f');
+            document.documentElement.style.setProperty('--color-four','#ffed00');
+            document.documentElement.style.setProperty('--color-five','#ffdd00');
+          }
+
+          function change7()
+          {
+            document.documentElement.style.setProperty('--color-one','#ff8c8c');
+            document.documentElement.style.setProperty('--color-two','#ff5858');
+            document.documentElement.style.setProperty('--color-three','#0b0b0b');
+            document.documentElement.style.setProperty('--color-four','#ff3f3f');
+            document.documentElement.style.setProperty('--color-five','#ff0000');
+          }
+
+          function change8()
+          {
+            document.documentElement.style.setProperty('--color-one','#d6f688');
+            document.documentElement.style.setProperty('--color-two','#b4ef29');
+            document.documentElement.style.setProperty('--color-three','#000');
+            document.documentElement.style.setProperty('--color-four','#c5f359');
+            document.documentElement.style.setProperty('--color-five','#9bd610');
+          }
+
+          // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+       function disableToggle(){
+         var te1 = document.getElementById('bio');
+         var te2 = document.getElementById('username');
+         var te3 = document.getElementById('password');
+         var te4 = document.getElementById('upload');
+
+         if(te1.disabled)
+         {
+           te1.disabled = false;
+           te2.disabled = false;
+           te3.disabled = false;
+           te4.disabled = false;
+         }
+         else{
+           te1.disabled = true;
+           te2.disabled = true;
+           te3.disabled = true;
+           te4.disabled = true;
+         }
+       }
+
+        </script>
+    </body>
+</html>

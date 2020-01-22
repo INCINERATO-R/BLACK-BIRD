@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/wavesurfer.js"></script>
+
+    </head>
+
+    <body>
+        <div id="waveform"></div>
+
+        <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'violet',
+            progressColor: 'purple'
+        });
+
+        wavesurfer.load('sail.mp3');
+
+        </script>
+    </body>
+</html>

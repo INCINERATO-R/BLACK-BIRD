@@ -1,0 +1,15 @@
+color 2 : dark background
+color 4 : light background
+color 3 : font color
+color 5 : darkest color
+
+SVG BACKGROUND LINKS
+http://thepatternlibrary.com/
+
+
+MISC LINKS
+
+https://cssgenerator.org/css-cursor-demonstrator-and-generator.html
+https://maketintsandshades.com/#e6e3c2
+
+FOLLOWERS = ADMIRERS

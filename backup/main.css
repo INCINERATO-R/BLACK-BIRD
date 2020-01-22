@@ -1,0 +1,210 @@
+.main-container{
+    width:95%;
+    height:100%;
+    background:#d9d9d9;
+    border-radius:5px;
+    margin:2.5%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+
+
+/* NAVBAR */
+nav{
+    width:100%;
+    height:100px;
+    background:#d9d9d9;
+}
+
+.links{
+    position:absolute;
+    top:5%;
+    left:3%;
+}
+
+.links a{
+    font-size:2em;
+    margin-left:50px;
+    color:#0d0d0d;
+}
+
+.links a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+.socials{
+    position: relative;
+    width:200px;
+    display:flex;
+    flex-direction: row;
+    margin-left:85%;
+}
+
+.socials img{
+    margin-left:10px;
+    width:30px;
+    height:30px;
+}
+/* NAVBAR */
+
+/* BLOCK 1 */
+.block{
+    width:100%;
+    background:#c9c9c9;
+}
+
+.first{
+    height:400px;
+}
+
+#text{
+    margin-top:-20%;
+}
+
+.first img{
+    width:400px;
+    height:400px;
+}
+
+#text h3,#text h6{
+    color:#0d0d0d;
+    margin-left:40%;
+}
+
+#text button{
+    margin-left:40%;
+    width:150px;
+    height:40px;
+    border:0;
+    border-radius:5px;
+    background:#d9d9d9;
+}
+
+/* BLOCK 1 */
+
+/* BLOCK 2 */
+.second{
+    width:100%;
+    height:350px;
+    background:#bbb;
+} 
+
+#cover{
+    width:200px;
+    height:200px;
+    border-radius:5px;
+    border:1px solid #fff;
+    padding:5px;
+    margin-left:5%;
+    margin-top:3%;
+}
+
+#cover:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+#player-icons{
+    width:50%;
+    margin-left:42%;
+    margin-top:2%;
+}
+
+#player-icons img{
+    width:45px;
+    height:45px;
+    margin-left:40px;
+    padding:5px;
+}
+
+#player-icons img:hover{
+    background:white;
+    cursor:pointer;
+}
+
+.second hr{
+    width:65%;
+    height:10px;
+    background:gray;
+    margin-top:-6%;
+    margin-left:28%;
+    border:1px solid gray;
+    border-radius:3px;
+}
+
+.temp{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    height:200px;
+    text-align: center;
+    margin-left:4%;
+}
+
+#title{
+    margin-top:2%;
+}
+
+#album{
+    margin-top:4%;
+    font-weight:bold;
+}
+
+/* BLOCK 2 */
+
+
+/* BLOCK 3 */
+.third{
+    background:#c9c9c9;
+    height:700px;
+}
+.tabs-toggle{
+    width:100%;
+    text-align: center;
+}
+
+.tabs-toggle button{
+    background:#bbb;
+    border:1px solid #bbb;
+    border-radius:5px;
+    width:150px;
+    height:40px;
+}
+
+.tabs-toggle button:hover{
+    background:#f2f2f2;
+}
+
+.list{
+    margin-left:33%;
+    margin-top:3%;
+    width:35%;
+    height:450px;
+    background:#bfbfbf;
+    border-radius:5px;
+    text-align: center;
+}
+
+.list span{
+    font-size:1.05em;
+}
+
+.list span:hover{
+    cursor:pointer;
+    font-size:1.1em;
+}
+
+
+/* BLOCK 3 */
+
+/* BLOCK 4 */
+.fourth{
+    background:#bbb;
+    height:700px;
+}
+/* BLOCK 4 */
